@@ -70,7 +70,8 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #ffffff;
+    color: rgb(72, 18, 199);
 }
 
 #sidebar ul.components {
@@ -114,7 +115,7 @@ a[data-toggle="collapse"] {
 
 ul ul a {
     font-size: 0.9em !important;
-    padding-left: 30px !important;
+    padding-left: 10px !important;
     background: #6d7fcc;
 }
 
@@ -124,7 +125,7 @@ ul.CTAs {
 
 ul.CTAs a {
     text-align: center;
-    font-size: 0.9em !important;
+    font-size: 1.2em !important;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
