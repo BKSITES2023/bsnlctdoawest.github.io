@@ -41,7 +41,28 @@
               </marquee>
         </ul>
       </nav>
-      
+         <nav class="top-navbar1">
+        <ul class="menu1">
+          <li class="menu-item1">
+            <a href="#" class="menu-link1"></a>
+            <ul class="submenu1">
+              <li class="submenu-item1"><a href="#" class="submenu-link1">Submenu 1.1</a></li>
+              <li class="submenu-item1"><a href="#" class="submenu-link1">Submenu 1.2</a></li>
+              <!-- Add more submenu items as needed -->
+            </ul>
+          </li>
+          <li class="menu-item1">
+            <a href="#" class="menu-link1"></a>
+            <ul class="submenu1">
+              <li class="submenu-item1"><a href="#" class="submenu-link1">Submenu 2.1</a></li>
+              <li class="submenu-item1"><a href="#" class="submenu-link1">Submenu 2.2</a></li>
+              <!-- Add more submenu items as needed -->
+            </ul>
+          </li>
+          <!-- Add more menu items as needed -->
+        </ul>
+      </nav>
+    
     <div>
     <div class="wrapper">
         <!-- Sidebar  -->
@@ -86,26 +107,21 @@
                   <a href="https://script.google.com/macros/s/AKfycbxr9OYF1EI80BId46V0E3Wl0MiElzSS0ODGSBf4kt0rETPlbTsGIpHOk_fOw_Q3-kn2TA/exec" target="_blank">TIP OLT Integration</a>
               </li>
                 <li>
-                    <a href="#">TR O/s Realization Report</a>
-                </li>
+                <a href="#" onclick="openModal()">
+                    <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
+                    BBC Performance Scorecard
+                </a>
+            </li>
+          <li>
+  <a href="#" onclick="openModal2()">
+    <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
+    FTTH Marketing Champion League Points Table
+  </a>
+</li>
                 <li>
                     <a href="https://script.google.com/macros/s/AKfycbyLspt60uBQhMacBSbhN6XVwfcitpE2t4osw-7gE8OoW5mbRRKPQuk4kzNR9M8US4Og/exec" target="_blank">Public Grievance Redress</a>
                 </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Customer Database</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="Marketing.html">OGB & ICB Cases</a>
-                        </li>
-                        <li>
-                          <a href="Marketing.html" target="_blank">Suspended-NP Lines</a>
-                      </li>
-                      <li>
-                        <a href="Marketing.html" target="_blank">Voluntary surrendered Customer List</a>
-                    </li>
-                       
-                    </ul>
-                </li>
+               
                  <li>
                     <a href="">Long Pending Dockets </a>
                 </li>
@@ -131,7 +147,7 @@
                       <a href="parameter.html" target="_blank">QOS SLA Parameters</a>
                   </li>
                        <li>
-                    <a href="FTTH parameter.html" target="_blank">QOS FTTH Parameters</a>
+                    <a href="FTTH parameter.html" target="_blank"> <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">FTTH QOS Parameters</a>
                 </li>
                   </ul>
               </li>
@@ -216,6 +232,26 @@
                     <h1 id="value6" style="font-size: 3em; margin-top: 10px;">0</h1>
                 </div>
             
+                <div class="news-section">
+                <ul class="news-list">
+                  <li class="news-item">
+                    <span class="news-icon"></span>
+                    <span class="news-title">OGB/ICB Customer List:</span>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQp03SF9syljIcFRi7d1E-qnX2dYu8WVw8r5gfIx3Bwr2HYO_TLSa9CV2K49GaTxRLolWRyE2t5A-lj/pub?output=xlsx" class="news-link" target="_blank">Download</a>
+                  </li>
+                  <li class="news-item">
+                    <span class="news-icon"></span>
+                    <span class="news-title">Suspended NP Customer List:</span>
+                    <a href="news2.pdf" class="news-link" target="_blank">Download</a>
+                  </li>
+                  <li class="news-item">
+                    <span class="news-icon"></span>
+                    <span class="news-title">Voluntary surrendered Customer List:</span>
+                    <a href="news3.pdf" class="news-link" target="_blank">Download</a>
+                  </li>
+                  <!-- Add more news items as needed -->
+                </ul>
+              </div>
                
                 <div class="iframe-container">
                     <iframe src="https://script.google.com/macros/s/AKfycbwGTtdquun2X6EOeAFzSryermT8cKfQpcBMowABSOCnPuXOhEq7FrSxoFU0PegqkQXy/exec" width="1600" height="950" scrolling="no" frameborder="0"></iframe>
@@ -226,6 +262,45 @@
                     <p style="font-size:12px;"> &copy; 2023 <a style="color:green;text-decoration:none" target="_blank">BSNL OA West CTD</a></p>
                     <p style="font-size:12px;"><a style="color:green;text-decoration:none" target="_blank"></a></p>
                 </footer>
+                
+                <div class="modal fade" id="myModalUnique" tabindex="-1" role="dialog" aria-labelledby="modalTitleUnique" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered custom-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header modal-header-custom">
+                        <h5 class="modal-title" id="modalTitleUnique">
+                          Cluster BBC Overall Performance Scorecard in F.Y. 2023-24
+                          <button type="button" class="btn btn-secondary gold-button" onclick="openPopup1()">Rule</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="modalIframeContainerUnique"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="modal fade" id="myModalUnique1" tabindex="-1" role="dialog" aria-labelledby="modalTitleUnique" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered custom-dialog2" role="document" >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleUnique1">
+                          FTTH Marketing Champion League Points Table 2023-24
+                          <button type="button" class="btn btn-secondary gold-button" onclick="openPopup2()">Rule</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="modalIframeContainerUnique1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
        
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -495,8 +570,268 @@
   .top-navbar a:hover {
     background-color: #555;
   }
-  </style>
+    
+  /* Custom CSS to override default modal width */
+  .modal-dialog.custom-dialog {
+    max-width: 1553px;
+  }
+ /* Custom CSS to override default modal width */
+.modal-dialog.custom-dialog2 {
+  width: 1400px !important;
+  max-width: 100% !important;
+}
 
+  </style>
+<style>
+  .modal-header-custom {
+    background-color: #40747e;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modal-header-custom::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+    transform: skewY(45deg);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  .modal-header-custom:hover::before {
+    top: 0;
+    opacity: 0.5;
+  }
+
+  .modal-header-custom .modal-title {
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .modal-header-custom:hover .modal-title {
+    letter-spacing: 3px;
+  }
+
+  .modal-header-custom .btn {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .modal-header-custom .btn:hover {
+    transform: rotate(180deg);
+  }
+
+  .close {
+    color: #fff;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .close:hover {
+    opacity: 1;
+  }
+</style>
+
+<style>
+  .custom-dialog2 .modal-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-dialog2 .modal-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: skewX(-30deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .custom-dialog2 .modal-header:hover::before {
+    transform: skewX(0deg);
+  }
+
+  .custom-dialog2 .modal-header .modal-title {
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .custom-dialog2 .modal-header:hover .modal-title {
+    letter-spacing: 2px;
+    transform: translateY(-5px);
+  }
+
+  .custom-dialog2 .modal-header .btn {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .custom-dialog2 .modal-header .btn:hover {
+    transform: scale(1.2) rotate(180deg);
+  }
+
+  .close {
+    color: #fff;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .close:hover {
+    opacity: 1;
+  }
+</style>
+<style>.news-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.news-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #f89406;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.news-title {
+  font-weight: bold;
+}
+
+.news-link {
+  color: #337ab7;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.news-link:hover {
+  color: #f89406;
+}
+
+.news-item:nth-child(odd) .news-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #f89406;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #ffb800;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #f89406;
+  }
+}
+</style>
+
+<style>/* Top Navbar Styles */
+  .top-navbar1 {
+    background-color: #2AAA8A;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  /* Menu Styles */
+  .menu1 {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item1 {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .menu-link1 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Submenu Styles */
+  .submenu1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #094782;
+    display: none;
+    padding: 10px 20px;
+    z-index: 1;
+  }
+  
+  .menu-item1:hover .submenu1 {
+    display: block;
+  }
+  
+  .submenu-item1 {
+    margin-bottom: 10px;
+  }
+  
+  .submenu-link1 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .submenu-link1:hover {
+    text-decoration: underline;
+  }
+  </style>
 <script>
     function startCounting() {
       var value1 = document.getElementById("value1");
@@ -594,6 +929,52 @@ for (var i = 0; i < btns.length; i++) {
   // Rest of your code here...
 }
 </Script>
+ <script>
+ 
+  var modalInstance = null;
+
+  function openModal() {
+    modalInstance = new bootstrap.Modal(document.getElementById('myModalUnique')); // Create a new instance of the modal
+    var modalIframeContainer = document.getElementById('modalIframeContainerUnique');
+    var iframeCode = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSezGrK_53bmzSMpHj2NiiE0M_M0p-i-5LOHkEqyfAs6JByiF6HJ_29FZcckVXc6kzyUU4QNMrmGHX_/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 600px; "></iframe>';
+
+    modalIframeContainer.innerHTML = iframeCode;
+    modalInstance.show(); // Show the modal
+  }
+
+  function closeModal() {
+    modalInstance.hide(); // Hide the modal
+  }
+
+</script>
+<script>
+  function openPopup1() {
+    alert("FTTH Provisioning:\n1 point for each FTTH Provisioning & 0.25 Bonus for New FTTH\n\nTIP OLT integration:\n10 points for each TIP OLT integration\n\nMTTR:\nIf the MTTR is between 16 and >14, the point given is 1.\nIf the MTTR is between 14 and >12, the point given is 2.\nIf the MTTR is between 12 and >10, the point given is 4.\nIf the MTTR is between 10 and >8, the point given is 6.\nIf the MTTR is <=8, the point given is 10.\n\n24 Hrs fault clearance:\nIf the value is between 70 and <75, the point given is 1.\nIf the value is between 75 and <80, the point given is 2.\nIf the value is between 80 and <85, the point given is 4.\nIf the value is between 85 and <90, the point given is 6.\nIf the value is <=90, the point given is 10.\n\nPenalty:\n0.25 points will be deducted for each FTTH BB disconnection\nIf MTTR is >16 to <=24  Penalty=2; and if MTTR is >24 Penalty=5\nIf 24 Hrs Clearance is <70 to >=60  Penalty=2; and if it is <60 Penalty=5");
+  }
+</script>
+
+
+<script>
+  var modalInstance = null;
+
+  function openModal2() {
+    modalInstance1 = new bootstrap.Modal(document.getElementById('myModalUnique1')); // Create a new instance of the modal
+    var modalIframeContainer = document.getElementById('modalIframeContainerUnique1');
+    var iframeCode = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQjEyCdkioQ_aBNVGiMTyEuDuSi0HzhB5KiMeLVQ0d7FqwCvYXeO3RagSu57bQrvblcES4-a1qpjxGv/pubhtml?gid=2132406300&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 700px; " ></iframe>';
+
+    modalIframeContainer.innerHTML = iframeCode;
+    modalInstance1.show(); // Show the modal
+  }
+
+  function closeModal() {
+    modalInstance1.hide(); // Hide the modal
+  }
+</script>
+<script>
+  function openPopup2() {
+    alert("Rule of FTTH Marketing Champion League\n\nFor each generated Lead Score=0.5\nFor each new FTTH Commissioned Lead Score=2\nFor each LL/BB to FTTH Conversion Commissioned Lead Score=1\nFor each new Leased Circuit Commissioned Lead Score=2\n** For every 100 points achieved in F.Y. 2023-24, one star will be added to your performance rating, showcasing your remarkable achievements.");
+  }
+</script>               
 </body>
 
 </html>
