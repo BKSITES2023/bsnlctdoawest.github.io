@@ -47,8 +47,8 @@
           <span id="time"></span>
           <span id="day"></span>
         </div>
-              <h4 class="heading">
-          <font size="5.5" color="white">WELCOME TO OA WEST PORTAL KOTD</font>
+          <h4 class="heading">
+          <font size="6" color="white" class="heading-text">WELCOME TO OA WEST PORTAL KOTD</font>
         </h4>
         <ul class="menu1">
           <li class="menu-item1">
@@ -260,7 +260,7 @@
               </div>
                
                 <div class="iframe-container">
-                    <iframe src="https://script.google.com/macros/s/AKfycbxKqRXy79L89V5IDgB0O475b7kIol5N7eJ7joXTnCXIUIgN4i7LjHxkpB5qzYJ0r37k/exec" width="1600" height="1000" scrolling="no" frameborder="0"></iframe>
+                    <iframe src="https://script.google.com/macros/s/AKfycbzp7XQYaIlLZROV5mtGyek_sn5rl6-ZPWH64hUtqtJsgZveOe8VbSIJxKj1skMias0/exec" width="1600" height="1000" scrolling="no" frameborder="0"></iframe>
                   </div>
                  
                   <footer class="text-muted text-center mt-2" style="background-color: #fafafa;">
@@ -781,7 +781,7 @@
 
 <style>/* Top Navbar Styles */
   .top-navbar1 {
-    background-color: #2AAA8A;
+    background-color: #000000;
     height: 50px;
     display: flex;
     justify-content: flex-start;
@@ -1051,11 +1051,37 @@ for (var i = 0; i < btns.length; i++) {
     }
   }
 </style> 
-  <style>
-  .heading {
-    padding-top: 8px;
+<style>.heading {
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.heading-text {
+  
+  color: white;
+  background: linear-gradient(to right, #00d2ff, #3a47d5, #ff00cc);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateGradient 5s linear infinite;
+ 
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% center;
   }
-</style>              
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+</style>             
 </body>
 
 </html>
