@@ -292,7 +292,8 @@
                       <div class="modal-header modal-header-custom">
                         <h5 class="modal-title" id="modalTitleUnique">
                           Cluster BBC Overall Performance Scorecard in F.Y. 2023-24
-                          <button type="button" class="btn btn-secondary gold-button" onclick="openPopup1()">Rule</button>
+                            <button id="downloadButton" class="download-button"><span class="spinner"><i class="fas fa-spinner fa-spin"></i></span>Download Scorecard  <i class="fas fa-file-excel"></i></button>
+                        
                         </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
                           <span aria-hidden="true">&times;</span>
@@ -1022,7 +1023,28 @@ for (var i = 0; i < btns.length; i++) {
   setInterval(updateClock, 1000);
 </script>
 
+<script>
+  document.getElementById("downloadButton").addEventListener("click", function() {
+    var downloadButton = document.getElementById("downloadButton");
+    downloadButton.classList.add("loading");
+    var spinner = downloadButton.querySelector(".spinner");
+    spinner.style.display = "inline-block";
 
+    setTimeout(function() {
+      var downloadLink = document.createElement("a");
+      downloadLink.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQRV5N-Iczi3PSgaKvPfaoPeNaDiwN5rTBztqcF4R9LzNXRFLHwWrf6ZLmthjmHowgr9grbX0fiaqCp/pub?output=xlsx";
+      downloadLink.download = "data.xlsx";
+
+      downloadLink.addEventListener("click", function() {
+        downloadButton.classList.remove("loading");
+        spinner.style.display = "none";
+      });
+
+      downloadLink.click();
+    }, 3000);
+  });
+</script>
+                
 
 <style>
   .clock {
@@ -1098,7 +1120,42 @@ for (var i = 0; i < btns.length; i++) {
   }
 }
 
-</style>             
+</style>  
+<style>
+  .download-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px;
+      cursor: pointer;
+      position: relative;
+    }
+  
+  
+
+  .download-button i {
+    margin-left: 5px;
+  }
+
+  .download-button .spinner {
+    margin-right: 5px;
+    display: none;
+  }
+
+  .download-button.loading .spinner {
+    display: inline-block;
+  }
+
+  .download-button:hover {
+    background-color: #45a049;
+  }
+</style>
+                
 </body>
 
 </html>
