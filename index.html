@@ -6,30 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-     <title>
-      
-        BSNL OA WEST
-    </title>
+    <title>BSNL OA WEST PORTAL</title>
+    <!-- Set the favicon -->
+    <link rel="icon" type="image/x-icon" href="https://1.bp.blogspot.com/-WLUaHeseza4/XQDZ8i2vCYI/AAAAAAAAAvo/lTLe0DnI9p0PkqMYxEY1L6ztO3if39IJwCLcBGAs/s320/bsnl-logo.jpeg">
+
+ 
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
 
 <body>
+<style>.heading {
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+}
 
+.heading-text {
+  color: white;
+  background: linear-gradient(to right, #00d2ff, #3a47d5, #ff00cc);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateGradient 5s linear infinite alternate;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+
+</style>
     <nav class="top-navbar">
         <ul>
             <marquee behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
               
-               <font color="purple">
-                **For smaller screen sizes, it is recommended to adjust the screen zoom to 80% or below in case the icons overlap. This can easily be achieved by pressing "Ctrl-" to zoom out or "Ctrl+" to zoom in.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </font>
+              
               **Some of the sections are currently under development and will be available shortly&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               **To access the Marketing module, Employees Lead Management module, and Daily CSC Report module, please use the  login credentials as follows: User ID: B followed by your 8-digit personal number (e.g. B01401065)
               **Password: Your date of birth in DDMMYYYY format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -41,13 +71,13 @@
               </marquee>
         </ul>
       </nav>
-         <nav class="top-navbar1">
-             <div id="clock" class="clock">
+      <nav class="top-navbar1">
+        <div id="clock" class="clock">
           <span id="date"></span>
           <span id="time"></span>
           <span id="day"></span>
         </div>
-          <h4 class="heading">
+        <h4 class="heading">
           <font size="6" color="white" class="heading-text">WELCOME TO OA WEST PORTAL KOTD</font>
         </h4>
         <ul class="menu1">
@@ -70,7 +100,7 @@
           <!-- Add more menu items as needed -->
         </ul>
       </nav>
-    
+      
     <div>
     <div class="wrapper">
         <!-- Sidebar  -->
@@ -83,201 +113,232 @@
             <ul class="list-unstyled components">
                 <li>
                 <div class="list-unstyled CTAs">
-                    <a href="" class="download" >DASHBOARD</a>
+                    <a href="" class="download">DASHBOARD</a>
                   </div>
                   </li>
                 <BR></BR>
                 <li>
-                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Marketing Activity</a>
-                  <ul class="collapse list-unstyled" id="pageSubmenu">
-                     
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Marketing Activity</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                       
+                      <li>
+                        <a href="https://script.google.com/macros/s/AKfycbwFAOvUDQA9Nxkol-4hBZ405FwYmDDXcDLr_JwkoKnFkhWDvutm62B8oXbbZqu5Nxw4/exec" target="_blank">
+                            <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
+                            Submit Marketing Report
+                        </a>
+                    </li>
                     <li>
-                      <a href="https://script.google.com/macros/s/AKfycbwFAOvUDQA9Nxkol-4hBZ405FwYmDDXcDLr_JwkoKnFkhWDvutm62B8oXbbZqu5Nxw4/exec" target="_blank">
-                          <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
-                          Submit Marketing Report
+                      <a href="https://script.google.com/macros/s/AKfycbxo2s7mzLQlGErgtZ_jTkpSM-FADE4eC87qB9vKX_jih1zusWEImRNBCepOBgLOJDwoXQ/exec" target="_blank" >
+                       
+                        View your Marketing Report
                       </a>
-                  </li>
-                  <li>
-                    <a href="https://script.google.com/macros/s/AKfycbxo2s7mzLQlGErgtZ_jTkpSM-FADE4eC87qB9vKX_jih1zusWEImRNBCepOBgLOJDwoXQ/exec" target="_blank" >
-                     
-                      View your Marketing Report
-                    </a>
-                  </li>
-                     
-                  </ul>
-              </li>
-                <li>
-                <li >
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Lead Management</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                       <li>
-                      <a href="https://script.google.com/macros/s/AKfycby30s1l5TwlJGJBbDBHfE4A5ASLmh-0IC2W8JkIX4Ajp66Em_VwG1sjdcqfIRAfYeLnXw/exec" target="_blank">
-                          <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
-                          Submit your FTTH Lead
-                      </a>
-                  </li>
-                        <li>
-                            <a href="https://script.google.com/macros/s/AKfycbz0bavJKhJP5FYi-h94RIqw3Jokof0AEpHM7L629KhhBQ6EsphB-NzGude-4XDwn5wo/exec" target="_blank">Lead Management(Emp)</a>
-                        </li>
-                        <li>
-                            <a href="https://script.google.com/macros/s/AKfycbxupklzR39ep8-lgXN7jjuEgEhWgzKr9dJ_8SaUGXyVhT9FcayikdU_SwhXVQRg5Q/exec" target="_blank">Lead Management(BBC)</a>
-                        </li>
+                    </li>
                        
                     </ul>
                 </li>
-                <li>
-                    <a href="https://script.google.com/macros/s/AKfycbwPs1jpcv6kx5Eqq7yvado54yjN3eWCPj20yLoruhNEeTKQPXm9Ib-aino9783Vgkvapg/exec" target="_blank">CSC Daily Sales Report</a>
-                </li>
-                <li>
-                  <a href="https://script.google.com/macros/s/AKfycbxr9OYF1EI80BId46V0E3Wl0MiElzSS0ODGSBf4kt0rETPlbTsGIpHOk_fOw_Q3-kn2TA/exec" target="_blank">TIP OLT Integration</a>
-              </li>
-                <li>
-                <a href="#" onclick="openModal()">
-                    <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
-                    BBC Performance Scorecard
-                </a>
-            </li>
-          <li>
-  <a href="#" onclick="openModal2()">
-    <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
-    FTTH Marketing Champion League Points Table
-  </a>
-</li>
-                <li>
-                    <a href="https://script.google.com/macros/s/AKfycbyLspt60uBQhMacBSbhN6XVwfcitpE2t4osw-7gE8OoW5mbRRKPQuk4kzNR9M8US4Og/exec" target="_blank">Public Grievance Redress</a>
-                </li>
-               
-               
-                <li>
-                  <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Analytic & Reports</a>
-                  <ul class="collapse list-unstyled" id="pageSubmenu2">
-                      <li>
-                          <a href="mmktg.html" target="_blank">Marketing Report</a>
-                      </li>
-                      <li>
-                          <a href="Leads.html" target="_blank">Generated Leads and Status</a>
-                      </li>
-                      <li>
-                          <a href="ftth.html" target="_blank">FTTH Target vs Achievement</a>
-                      </li>
-                      <li>
-                        <a href="csc.html" target="_blank">CSC Sales</a>
+                  <li>
+                  <li >
+                      <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Lead Management</a>
+                      <ul class="collapse list-unstyled" id="homeSubmenu">
+                         <li>
+                        <a href="https://script.google.com/macros/s/AKfycby30s1l5TwlJGJBbDBHfE4A5ASLmh-0IC2W8JkIX4Ajp66Em_VwG1sjdcqfIRAfYeLnXw/exec" target="_blank">
+                            <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
+                            Submit your FTTH Lead
+                        </a>
                     </li>
-                      <li>
-                        <a href="revenue.html" target="_blank">Revenue</a>
-                    </li>
-                    <li>
-                      <a href="parameter.html" target="_blank">QOS SLA Parameters</a>
+                          <li>
+                              <a href="https://script.google.com/macros/s/AKfycbz0bavJKhJP5FYi-h94RIqw3Jokof0AEpHM7L629KhhBQ6EsphB-NzGude-4XDwn5wo/exec" target="_blank">Lead Management(Emp)</a>
+                          </li>
+                          <li>
+                              <a href="https://script.google.com/macros/s/AKfycbxupklzR39ep8-lgXN7jjuEgEhWgzKr9dJ_8SaUGXyVhT9FcayikdU_SwhXVQRg5Q/exec" target="_blank">Lead Management(BBC)</a>
+                          </li>
+                         
+                      </ul>
                   </li>
-                       <li>
-                    <a href="FTTH parameter.html" target="_blank"> <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">FTTH QOS Parameters</a>
+                  <li>
+                      <a href="https://script.google.com/macros/s/AKfycbwPs1jpcv6kx5Eqq7yvado54yjN3eWCPj20yLoruhNEeTKQPXm9Ib-aino9783Vgkvapg/exec" target="_blank">CSC Daily Sales Report</a>
+                  </li>
+                  <li>
+                    <a href="https://script.google.com/macros/s/AKfycbxr9OYF1EI80BId46V0E3Wl0MiElzSS0ODGSBf4kt0rETPlbTsGIpHOk_fOw_Q3-kn2TA/exec" target="_blank">TIP OLT Integration</a>
                 </li>
-                  </ul>
+                  <li>
+                  <a href="#" onclick="openModal()">
+                      <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
+                      BBC Performance Scorecard
+                  </a>
               </li>
+            <li>
+    <a href="#" onclick="openModal2()">
+      <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
+      FTTH Marketing Champion League Points Table
+    </a>
+  </li>
+                  <li>
+                      <a href="https://script.google.com/macros/s/AKfycbyLspt60uBQhMacBSbhN6XVwfcitpE2t4osw-7gE8OoW5mbRRKPQuk4kzNR9M8US4Og/exec" target="_blank">Public Grievance Redress</a>
+                  </li>
+                 
+                 
+                  <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Analytic & Reports</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="mmktg.html" target="_blank">Marketing Report</a>
+                        </li>
+                        <li>
+                            <a href="Leads.html" target="_blank">Generated Leads and Status</a>
+                        </li>
+                        <li>
+                            <a href="ftth.html" target="_blank">FTTH Target vs Achievement</a>
+                        </li>
+                        <li>
+                          <a href="csc.html" target="_blank">CSC Sales</a>
+                      </li>
+                        <li>
+                          <a href="revenue.html" target="_blank">Revenue</a>
+                      </li>
+                      <li>
+                        <a href="parameter.html" target="_blank">QOS SLA Parameters</a>
+                    </li>
+                         <li>
+                      <a href="FTTH parameter.html" target="_blank"> <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">FTTH QOS Parameters</a>
+                  </li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Importent Sites Link</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu3">
+                    <li>
+                      <a href="https://parichay.nic.in/pnv1/assets/login.html?service=passive&active=true&rm_5=false&continue=https://jan_com/mail/&pp=1&scc=1&lmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&sid=eOfficeBSNL" target="_blank" rel="noopener noreferrer">Parichay e-Office </a>
+                  </li>
+                  <li>
+                      <a href="http://itpchyd.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL Oorja Portal</a>
+                  </li>
+                  <li>
+                      <a href="http://www.lcprabal.bsnl.co.in/PrabalPlus/" target="_blank" rel="noopener noreferrer">BSNL Prabal+ LC</a>
+                  </li>
+                  <li>
+                      <a href="https://fms.bsnl.in/" target="_blank" rel="noopener noreferrer">BSNL FMS Portal</a>
+                  </li>
+                  <li>
+                      <a href="http://10.193.219.73/login.php" target="_blank" rel="noopener noreferrer">BSNL CFA Dashboard</a>
+                  </li>
+                  <li>
+                      <a href="http://eportal.erp.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL ESS Portal</a>
+                  </li>
+                  <li>
+                      <a href="http://www.intranet.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL Intranet Portal</a>
+                  </li>
+                  <li>
+                      <a href="https://pgrms.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL PGRAMS Portal</a>
+                  </li>
+                  <li>
+                      <a href="https://pgportal.gov.in/cpgoffice/" target="_blank" rel="noopener noreferrer">CPGRAMS Portal</a>
+                  </li>
+                  <li>
+                      <a href="https://rtionline.gov.in/RTIMIS/login/index.php" target="_blank" rel="noopener noreferrer">Online RTI Portal</a>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                
+              </ul>
+  
               <li>
-                <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Importent Sites Link</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu3">
+                <a href="#" onclick="openModal2Details()">
+                  <img src="https://www.nnsaikiacollege.org/images/admission2022-2023/New.gif" alt="New GIF" style="width: 40px; height: 25px; vertical-align: middle;">
+                  Working DEL OA West
+                </a>
+              </li>
+                          
+  
+              <li>
+                <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Download</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu4">
+                 
+                <li>
+                    <a href="" target="_blank" rel="noopener noreferrer">Non Payment Customer List</a>
+                </li>
+                <li>
+                    <a href="" target="_blank" rel="noopener noreferrer">Disconnected Coustomer List</a>
+                </li>
+            
+                </ul>
+  
+              <ul class="list-unstyled CTAs">
+                
                   <li>
-                    <a href="https://parichay.nic.in/pnv1/assets/login.html?service=passive&active=true&rm_5=false&continue=https://jan_com/mail/&pp=1&scc=1&lmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&sid=eOfficeBSNL" target="_blank" rel="noopener noreferrer">Parichay e-Office </a>
-                </li>
-                <li>
-                    <a href="http://itpchyd.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL Oorja Portal</a>
-                </li>
-                <li>
-                    <a href="http://www.lcprabal.bsnl.co.in/PrabalPlus/" target="_blank" rel="noopener noreferrer">BSNL Prabal+ LC</a>
-                </li>
-                <li>
-                    <a href="https://fms.bsnl.in/" target="_blank" rel="noopener noreferrer">BSNL FMS Portal</a>
-                </li>
-                <li>
-                    <a href="http://10.193.219.73/login.php" target="_blank" rel="noopener noreferrer">BSNL CFA Dashboard</a>
-                </li>
-                <li>
-                    <a href="http://eportal.erp.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL ESS Portal</a>
-                </li>
-                <li>
-                    <a href="http://www.intranet.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL Intranet Portal</a>
-                </li>
-                <li>
-                    <a href="https://pgrms.bsnl.co.in/" target="_blank" rel="noopener noreferrer">BSNL PGRAMS Portal</a>
-                </li>
-                <li>
-                    <a href="https://pgportal.gov.in/cpgoffice/" target="_blank" rel="noopener noreferrer">CPGRAMS Portal</a>
-                </li>
-                <li>
-                    <a href="https://rtionline.gov.in/RTIMIS/login/index.php" target="_blank" rel="noopener noreferrer">Online RTI Portal</a>
-                </li>
-                
-                
-                
-                
-                
-              
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-              
-                <li>
-                  <li>
-                    <a href="Leaderboard.html" target="_blank" class="download">LEADERBOARD</a>
-                </li>
-                
-                </li>
-                
-            </ul>
-        </nav> 
+                    <li>
+                      <a href="Leaderboard.html" target="_blank" class="download">LEADERBOARD</a>
+                  </li>
+                  
+                  </li>
+                  
+              </ul>
+          </nav> 
+      
     
         <!-- Page Content  -->
         <body onload="startCounting()">
-            <div class="container">
-                <div class="card">
-                    <p style="margin-top: 10px;">FTTH BB</p>
-                    <h1 id="value1" style="font-size: 3em; margin-top: 10px;">0</h1>
-                </div>
-                <div class="card">
-                    <p style="margin-top: 10px;">FTTH VOICE</p>
-                    <h1 id="value2" style="font-size: 3em; margin-top: 10px;">0</h1>
-                </div>
-                <div class="card">
-                    <p style="margin-top: 10px;">TIP OLT</p>
-                    <h1 id="value3" style="font-size: 3em; margin-top: 10px;">0</h1>
-                </div>
-                <div class="card">
-                    <p style="margin-top: 10px;">LANDLINE ONLY</p>
-                    <h1 id="value4" style="font-size: 3em; margin-top: 10px;">0</h1>
-                </div>
-                <div class="card">
-                    <p style="margin-top: 10px;">BROADBAND</p>
-                    <h1 id="value5" style="font-size: 3em; margin-top: 10px;">0</h1>
-                </div>
-                <div class="card">
-                    <p style="margin-top: 10px;">LEASED CIRCUIT</p>
-                    <h1 id="value6" style="font-size: 3em; margin-top: 10px;">0</h1>
-                </div>
-            
-                <div class="news-section">
-                <ul class="news-list">
-                  <li class="news-item">
-                    <span class="news-icon"></span>
-                    <span class="news-title">OGB/ICB Customer List:</span>
-                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQp03SF9syljIcFRi7d1E-qnX2dYu8WVw8r5gfIx3Bwr2HYO_TLSa9CV2K49GaTxRLolWRyE2t5A-lj/pub?output=xlsx" class="news-link" target="_blank">Download</a>
-                  </li>
-                  <li class="news-item">
-                    <span class="news-icon"></span>
-                    <span class="news-title">Suspended NP Customer List:</span>
-                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQp03SF9syljIcFRi7d1E-qnX2dYu8WVw8r5gfIx3Bwr2HYO_TLSa9CV2K49GaTxRLolWRyE2t5A-lj/pub?output=xlsx" class="news-link" target="_blank">Download</a>
-                  </li>
-                  <li class="news-item">
-                    <span class="news-icon"></span>
-                    <span class="news-title">Voluntary surrendered Customer List:</span>
-                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQp03SF9syljIcFRi7d1E-qnX2dYu8WVw8r5gfIx3Bwr2HYO_TLSa9CV2K49GaTxRLolWRyE2t5A-lj/pub?output=xlsx" class="news-link" target="_blank">Download</a>
-                  </li>
-                  <!-- Add more news items as needed -->
-                </ul>
+          <div class="container">
+
+              <div class="card">
+                  <p style="margin-top: 10px;">FTTH BB</p>
+                  <h1 id="value1" style="font-size: 3em; margin-top: 10px;">0</h1>
               </div>
+             
+              <div class="card">
+                  <p style="margin-top: 10px;">TIP OLT</p>
+                  <h1 id="value3" style="font-size: 3em; margin-top: 10px;">0</h1>
+              </div>
+              <div class="card">
+                  <p style="margin-top: 10px;">LANDLINE ONLY</p>
+                  <h1 id="value4" style="font-size: 3em; margin-top: 10px;">0</h1>
+              </div>
+              <div class="card">
+                  <p style="margin-top: 10px;">BROADBAND</p>
+                  <h1 id="value5" style="font-size: 3em; margin-top: 10px;">0</h1>
+              </div>
+              <div class="card">
+                  <p style="margin-top: 10px;">LEASED CIRCUIT</p>
+                  <h1 id="value6" style="font-size: 3em; margin-top: 10px;">0</h1>
+              </div>
+              <div id="chartContainer">
+                <div class="charts-container">
+                  <div class="chart-column">
+                    <h2 class="chart-title">Clusters Total CFA Revenue Figure for June 2023 (in Lakh)</h2>
+                    <canvas id="doughnutChart"></canvas>
+                  </div>
+                  <div class="chart-column">
+                    <h2 class="chart-title">Clusters Revenue Figure of FTTH Service for June 2023 (in Lakh)</h2>
+                    <canvas id="barChart"></canvas>
+                  </div>
+                </div>
+              
+                <div class="charts-container">
+                  <canvas id="lineChart"></canvas>
+                </div>
+             
+                <div class="container">
+                  <div class="charts-container">
+                    <div class="filter-container">
+                      <label for="monthSelect">Select Month:</label>
+                      <select id="monthSelect">
+                        <option value="0">All Month (Average KPI)</option>
+                        <option value="APRIL">April</option>
+                        <option value="MAY">May</option>
+                        <option value="JUNE">June</option>
+                      </select>
+                    </div>
+                    <canvas id="barChart4"></canvas>
+                  </div>
+                </div>
+                
+            
                
                 <div class="iframe-container">
-                    <iframe src="https://script.google.com/macros/s/AKfycbznRcOhoMjj8I4jUMFUANPEV_nV-cKYfu-UFluzjYNWNucViuch2z64hZfSa3gr4Fr2/exec" width="1600" height="1100" scrolling="no" frameborder="0"></iframe>
+                    <iframe src="https://script.google.com/macros/s/AKfycbxA-wODZ_BOyN5Fz1teLiB7W_iWfGFaE9hnPG55wcfkK5se2eDhhwIq3bafGIxeuyMW/exec" width="1629"  height="1500" scrolling="no" frameborder="0"></iframe>
                   </div>
                  
                   <footer class="text-muted text-center mt-2" style="background-color: #fafafa;">
@@ -285,15 +346,19 @@
                     <p style="font-size:12px;"> &copy; 2023 <a style="color:green;text-decoration:none" target="_blank">BSNL OA West CTD</a></p>
                     <p style="font-size:12px;"><a style="color:green;text-decoration:none" target="_blank"></a></p>
                 </footer>
-                
+
+
                 <div class="modal fade" id="myModalUnique" tabindex="-1" role="dialog" aria-labelledby="modalTitleUnique" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered custom-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header modal-header-custom">
                         <h5 class="modal-title" id="modalTitleUnique">
                           Cluster BBC Overall Performance Scorecard in F.Y. 2023-24
-                            <button id="downloadButton" class="download-button"><span class="spinner"><i class="fas fa-spinner fa-spin"></i></span>Download Scorecard  <i class="fas fa-file-excel"></i></button>
-                        
+                          
+                          <button id="downloadButton" class="download-button"><span class="spinner"><i class="fas fa-spinner fa-spin"></i></span>Download Scorecard  <i class="fas fa-file-excel"></i></button>
+
+                       
+
                         </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
                           <span aria-hidden="true">&times;</span>
@@ -326,6 +391,25 @@
                   </div>
                 </div>
                 
+                <div class="modal fade" id="myModalUnique2" tabindex="-1" role="dialog" aria-labelledby="modalTitleUnique2" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered custom-dialog3" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleUnique2">
+                          Working DEL OA WEST
+                         
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal2()">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="modalIframeContainerUnique2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
        
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -347,7 +431,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
+        max-width: 1500px;
         margin: 0 auto;
        
       }
@@ -594,7 +678,8 @@
   .top-navbar a:hover {
     background-color: #555;
   }
-    
+
+
   /* Custom CSS to override default modal width */
   .modal-dialog.custom-dialog {
     max-width: 1553px;
@@ -604,9 +689,14 @@
   width: 1400px !important;
   max-width: 100% !important;
 }
+.modal-dialog.custom-dialog3 {
+  width: 1100px !important;
+  max-width: 100% !important;
+ 
+}
 
   </style>
-<style>
+ <style>
   .modal-header-custom {
     background-color: #40747e;
     color: #fff;
@@ -731,6 +821,78 @@
     opacity: 1;
   }
 </style>
+
+<style>
+.modal-dialog-centered.custom-dialog3 {
+  max-width: 500px;
+}
+
+#myModalUnique2 .modal-header {
+  background: linear-gradient(45deg, #6f7dff, #ffa64d);
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#myModalUnique2 .modal-header::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.1;
+  transform: skewY(45deg);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+#myModalUnique2 .modal-header:hover::before {
+  top: 0;
+  opacity: 0.2;
+}
+
+#myModalUnique2 .modal-title {
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#myModalUnique2 .modal-header:hover .modal-title {
+  letter-spacing: 3px;
+}
+
+#myModalUnique2 .modal-header .close {
+  color: #fff;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#myModalUnique2 .modal-header .close:hover {
+  opacity: 1;
+}
+
+#myModalUnique2 .modal-header .btn {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#myModalUnique2 .modal-header .btn:hover {
+  transform: rotate(180deg);
+}
+
+
+
+</style>
+
 <style>.news-section {
   background-color: #f8f8f8;
   padding: 20px;
@@ -856,6 +1018,7 @@
     text-decoration: underline;
   }
   </style>
+
 <script>
     function startCounting() {
       var value1 = document.getElementById("value1");
@@ -872,17 +1035,17 @@
       var count6 = 0;
       
       var interval1 = setInterval(function() {
-        count1 += 80;
+        count1 += 100;
         value1.innerText = count1;
-        if (count1 >= 7033) {
+        if (count1 >= 7113) {
           clearInterval(interval1);
         }
       }, 10);
       
       var interval2 = setInterval(function() {
-        count2 += 80;
+        count2 += 10;
         value2.innerText = count2;
-        if (count2 >= 6369) {
+        if (count2 >= 5933) {
           clearInterval(interval2);
         }
       }, 10);
@@ -890,29 +1053,29 @@
       var interval3 = setInterval(function() {
 count3 += 4;
 value3.innerText = count3;
-if (count3 >= 162) {
+if (count3 >= 163) {
 clearInterval(interval3);
 }
 }, 100);
 var interval4 = setInterval(function() {
-count4 += 500
+count4 += 300
 value4.innerText = count4;
-if (count4 >= 17945) {
+if (count4 >= 17132) {
 clearInterval(interval4);
 }
 }, 100);
 var interval5 = setInterval(function() {
 count5 += 50;
 value5.innerText = count5;
-if (count5 >= 2646) {
+if (count5 >= 2509) {
 clearInterval(interval5);
 }
 }, 100);
 
 var interval6 = setInterval(function() {
-count6 += 20;
+count6 += 10;
 value6.innerText = count6;
-if (count6 >= 629) {
+if (count6 >= 350) {
 clearInterval(interval6);
 }
 }, 100);
@@ -953,14 +1116,17 @@ for (var i = 0; i < btns.length; i++) {
   // Rest of your code here...
 }
 </Script>
- <script>
+
+
+<script>
  
   var modalInstance = null;
 
   function openModal() {
     modalInstance = new bootstrap.Modal(document.getElementById('myModalUnique')); // Create a new instance of the modal
     var modalIframeContainer = document.getElementById('modalIframeContainerUnique');
-    var iframeCode = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRPHjeYdgRdCBvjDA6Y236xcR5CzQ9RjAv-q-1Uq7HR690GBr2zcLa3k-zgvyQbtjyoqVTXSCFpcAh-/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 700px; "></iframe>';
+    var iframeCode = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRPHjeYdgRdCBvjDA6Y236xcR5CzQ9RjAv-q-1Uq7HR690GBr2zcLa3k-zgvyQbtjyoqVTXSCFpcAh-/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 700px;" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>';
+
 
     modalIframeContainer.innerHTML = iframeCode;
     modalInstance.show(); // Show the modal
@@ -973,7 +1139,7 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 <script>
   function openPopup1() {
-    alert("FTTH Provisioning:\n1 point for each FTTH Provisioning & 0.25 Bonus for New FTTH\n\nTIP OLT integration:\n10 points for each TIP OLT integration\n\nMTTR:\nIf the MTTR is between 16 and >14, the point given is 1.\nIf the MTTR is between 14 and >12, the point given is 2.\nIf the MTTR is between 12 and >10, the point given is 4.\nIf the MTTR is between 10 and >8, the point given is 6.\nIf the MTTR is <=8, the point given is 10.\n\n24 Hrs fault clearance:\nIf the value is between 70 and <75, the point given is 1.\nIf the value is between 75 and <80, the point given is 2.\nIf the value is between 80 and <85, the point given is 4.\nIf the value is between 85 and <90, the point given is 6.\nIf the value is >=90, the point given is 10.\n\nPenalty:\n0.25 points will be deducted for each FTTH BB disconnection\nIf MTTR is >16 to <=24  Penalty=2; and if MTTR is >24 Penalty=5\nIf 24 Hrs Clearance is <70 to >=60  Penalty=2; and if it is <60 Penalty=5");
+    alert("FTTH Provisioning:\n1 point for each FTTH Provisioning & 0.25 Bonus for New FTTH\n\nTIP OLT integration:\n10 points for each TIP OLT integration\n\nMTTR:\nIf the MTTR is between 16 and >14, the point given is 1.\nIf the MTTR is between 14 and >12, the point given is 2.\nIf the MTTR is between 12 and >10, the point given is 4.\nIf the MTTR is between 10 and >8, the point given is 6.\nIf the MTTR is <=8, the point given is 10.\n\n24 Hrs fault clearance:\nIf the value is between 70 and <75, the point given is 1.\nIf the value is between 75 and <80, the point given is 2.\nIf the value is between 80 and <85, the point given is 4.\nIf the value is between 85 and <90, the point given is 6.\nIf the value is <=90, the point given is 10.\n\nPenalty:\n0.25 points will be deducted for each FTTH BB disconnection\nIf MTTR is >16 to <=24  Penalty=2; and if MTTR is >24 Penalty=5\nIf 24 Hrs Clearance is <70 to >=60  Penalty=2; and if it is <60 Penalty=5");
   }
 </script>
 
@@ -984,7 +1150,7 @@ for (var i = 0; i < btns.length; i++) {
   function openModal2() {
     modalInstance1 = new bootstrap.Modal(document.getElementById('myModalUnique1')); // Create a new instance of the modal
     var modalIframeContainer = document.getElementById('modalIframeContainerUnique1');
-    var iframeCode = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQcC5G0w03r6_Raoed_sG1F0pf3ZZEBsWPdpsulP3N9jrUwB16zB-ekblUrnZ4xFdkeMTVNZ5b50AhY/pubhtml?gid=1449038583&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 700px; "></iframe>';
+    var iframeCode = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQjEyCdkioQ_aBNVGiMTyEuDuSi0HzhB5KiMeLVQ0d7FqwCvYXeO3RagSu57bQrvblcES4-a1qpjxGv/pubhtml?gid=2132406300&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 700px; " ></iframe>';
 
     modalIframeContainer.innerHTML = iframeCode;
     modalInstance1.show(); // Show the modal
@@ -998,8 +1164,26 @@ for (var i = 0; i < btns.length; i++) {
   function openPopup2() {
     alert("Rule of FTTH Marketing Champion League\n\nFor each generated Lead Score=0.5\nFor each new FTTH Commissioned Lead Score=2\nFor each LL/BB to FTTH Conversion Commissioned Lead Score=1\nFor each new Leased Circuit Commissioned Lead Score=2\n** For every 100 points achieved in F.Y. 2023-24, one star will be added to your performance rating, showcasing your remarkable achievements.");
   }
-</script>  
- 
+</script>
+
+<script>
+  var modalInstance2 = null;
+
+  function openModal2Details() {
+    modalInstance2 = new bootstrap.Modal(document.getElementById('myModalUnique2')); // Create a new instance of the modal
+    var modalIframeContainer = document.getElementById('modalIframeContainerUnique2');
+    var iframeCode = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7EGy4MCzMmbN1w69ZG5paIzf-y7FhQfByRw94l-qn8NvsZT0uJLJntK8eOsk1R9UvCGWOa_xscM3Z/pubhtml?gid=239037396&amp;single=true&amp;widget=true&amp;headers=false"style="width: 100%; height: 700px; "></iframe>';
+
+    modalIframeContainer.innerHTML = iframeCode;
+    modalInstance2.show(); // Show the modal
+  }
+
+  function closeModal2() {
+    modalInstance2.hide(); // Hide the modal
+  }
+</script>
+
+
 <script>
   function updateClock() {
     var clockElement = document.getElementById("clock");
@@ -1044,8 +1228,231 @@ for (var i = 0; i < btns.length; i++) {
     }, 3000);
   });
 </script>
-                
 
+
+<script>
+  const ll_abf_data = [
+    79.596, 73.295, 71.748, 66.35, 67.823, 63.479, 62.464, 59.5, 63.09, 58.265,
+    58.386, 55.402, 55.364, 50.896, 50.299, 48.351, 49.347, 46.323, 43.601, 46.872,
+    43.362, 43.758, 43.758, 49.978, 39.634, 38.066, 37.565
+  ];
+
+  const bb_abf_data = [
+    50.499, 49.638, 46.809, 45.898, 42.691, 41.329, 40.017, 39.536, 37.71, 36.287,
+    34.966, 33.965, 31.429, 32.405, 30.092, 28.543, 24.942, 22.886, 22.859, 21.313,
+    19.682, 18.574, 18.574, 17.895, 15.802, 17.349, 15.072
+  ];
+
+  const ftth_abf_data = [
+    15.781, 16.868, 20.802, 17.566, 16.992, 16.419, 17.28, 16.893, 17.61, 17.537,
+    18.015, 19.424, 21.839, 20.412, 22.053, 23.724, 24.734, 27.013, 27.792, 29.803,
+    32.532, 33.774, 33.774, 37.201, 40.617, 42.281, 43.419
+  ];
+
+  const months = [
+    'Apr-21', 'May-21', 'Jun-21', 'Jul-21', 'Aug-21', 'Sep-21', 'Oct-21', 'Nov-21',
+    'Dec-21', 'Jan-22', 'Feb-22', 'Mar-22', 'Apr-22', 'May-22', 'Jun-22', 'Jul-22',
+    'Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23',
+    'Apr-23', 'May-23', 'Jun-23'
+  ];
+
+  const ctx = document.getElementById('lineChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: months,
+      datasets: [
+        {
+          label: 'Landline',
+          data: ll_abf_data,
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgba(255, 99, 132, 1)',
+          borderWidth: 2
+        },
+        {
+          label: 'Broadband',
+          data: bb_abf_data,
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 2
+        },
+        {
+          label: 'FTTH',
+          data: ftth_abf_data,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: '#0BDA51',
+          borderWidth: 2
+        }
+      ]
+      
+    },
+    
+    options: {
+      hoverRadius: 12,
+    hoverBackgroundColor: 'yellow',
+  plugins: {
+    title: {
+      display: true,
+      text: 'Revenue Trends: Landline, Broadband, and FTTH Services OA West',
+      font: {
+        size: 20,
+        weight: 'bold',
+        color: '#17a2b8' // Set the color here
+      },
+      padding: {
+        top: 10,
+        bottom: 30
+      }
+    },
+    legend: {
+      display: true,
+      position: 'bottom',
+      labels: {
+        font: {
+          size: 14
+        },
+        padding: 20
+      }
+    }
+  }
+}
+
+  });
+
+  const abfFigures = [15.41, 13.16, 12.88, 17.13, 10.68, 10.42, 16.37];
+const labels = ['ANDUL', 'CHINSURAH', 'ICHAPUR', 'SALKIA', 'SERAMPORE', 'SHIBPUR', 'UTTARPARA'];
+
+const ctx2 = document.getElementById('doughnutChart').getContext('2d');
+new Chart(ctx2, {
+type: 'doughnut',
+data: {
+  labels: labels,
+  datasets: [{
+    data: abfFigures,
+     backgroundColor: ['#ffa8bd', '#a0d5f7', '#ffe9ad', '#dca2fd', '#ffc56c', '#9ce8e8', '#bba6ff'],
+    borderColor: '#fff',
+
+    borderColor: '#fff',
+    borderWidth: 2
+  }]
+},
+options: {
+  responsive: true,
+  plugins: {
+   
+    title: {
+      display: true,
+     
+      font: {
+        size: 16,
+        weight: 'bold'
+      }
+    },
+    legend: {
+      display: true,
+      position: 'bottom',
+      labels: {
+        font: {
+          size: 14
+        }
+      }
+    },
+    datalabels: {
+     
+      color: '#00000',
+      font: {
+        weight: 'normal'
+      },
+      formatter: (value) => {
+        return value + ' '+'Lakh';
+      },
+      offset: 100 // Adjust the offset value to increase/decrease the distance of data labels from the bars
+    }
+  },
+  cutout: '80%', // Adjust the value to make the radius thinner
+  hoverOffset: 10
+},
+plugins: [ChartDataLabels] // Activate the ChartDataLabels plugin
+});
+
+
+  
+</script>
+<script>
+  const ftthabfFigures = [7.77, 5.76, 4.28, 6.75, 4.58, 6.10, 8.17];
+  const ftthlabels = ['ANDUL', 'CHINSURAH', 'ICHAPUR', 'SALKIA', 'SERAMPORE', 'SHIBPUR', 'UTTARPARA'];
+
+  const ctx3 = document.getElementById('barChart').getContext('2d');
+  const gradientColors = ['#ff6384', '#36a2eb', '#ffce56', '#cc65fe', '#ff9f40', '#4bc0c0', '#9966ff'];
+  const barColors = [];
+
+  // Generate gradient colors with shadows
+  gradientColors.forEach((color) => {
+    const gradient = ctx3.createLinearGradient(0, 0, 0, 300);
+    gradient.addColorStop(0, color);
+    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+
+    // Apply shadow effect
+    ctx3.shadowOffsetX = 2;
+    ctx3.shadowOffsetY = 2;
+    ctx3.shadowBlur = 4;
+    ctx3.shadowColor = 'rgba(0, 0, 0, 0.3)';
+
+    // Save the gradient colors with shadows
+    barColors.push(gradient);
+  });
+
+  const chartData = {
+    labels: ftthlabels,
+    datasets: [{
+      label: '', // Set your custom legend name here
+      data: ftthabfFigures,
+      backgroundColor: barColors,
+      borderColor: '#fff',
+      borderWidth: 2
+    }]
+  };
+
+  new Chart(ctx3, {
+    type: 'bar',
+    data: chartData,
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: '',
+          font: {
+            size: 16,
+            weight: 'bold'
+          }
+        },
+        legend: {
+          display: true,
+          position: 'bottom',
+        },
+        datalabels: {
+      color: '#00000',
+      font: {
+        weight: ''
+      },
+      formatter: (value) => {
+        return value + ' '+'Lakh';
+      }
+    }
+      },
+      
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+        
+      }
+    },
+
+    plugins: [ChartDataLabels] // Activate the ChartDataLabels plugin
+  });
+</script>
 <style>
   .clock {
     display: flex;
@@ -1089,38 +1496,8 @@ for (var i = 0; i < btns.length; i++) {
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
   }
-</style> 
-<style>.heading {
-  text-align: center;
-  padding: 10px;
-  padding-top: 15px;
-}
+</style>
 
-.heading-text {
-  
-  color: white;
-  background: linear-gradient(to right, #00d2ff, #3a47d5, #ff00cc);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animateGradient 5s linear infinite;
- 
-}
-
-@keyframes animateGradient {
-  0% {
-    background-position: 0% center;
-  }
-  50% {
-    background-position: 100% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-</style>  
 <style>
   .download-button {
       background-color: #4CAF50;
@@ -1155,7 +1532,272 @@ for (var i = 0; i < btns.length; i++) {
     background-color: #45a049;
   }
 </style>
-                
+<style>
+  .charts-container {
+    display: flex;
+    width: 1600px;
+    margin: 0 auto;
+    border: 4px solid #69dac5;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .chart-column {
+    margin: 10px;
+  }
+
+  /* Styling for the chart canvas */
+  #lineChart {
+   max-width: 1800px;
+    max-height: 350px;
+  }
+
+  #doughnutChart {
+    max-width: 700px;
+    max-height: 350px;
+  }
+
+  #barChart {
+    max-width: 800px;
+    max-height: 350px;
+  }
+  #barChart4 {
+    max-width: 1500px;
+    max-height: 350px;
+  }
+
+
+  /* Styling for chart title */
+  .chart-title {
+    color: #17a2b8;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .chart-title {
+  color: #17a2b8;
+}
+
+
+</style>
+
+
+
+<script>
+   
+   const data = [
+  { cluster: 'CHINSURAH', month: 'APRIL', score: 83.25 },
+  { cluster: 'SALKIA', month: 'APRIL', score: 93 },
+  { cluster: 'ICHAPUR', month: 'APRIL', score: 111 },
+  { cluster: 'SERAMPORE', month: 'APRIL', score: 17.25 },
+  { cluster: 'UTTARPARA', month: 'APRIL', score: 59.5 },
+  { cluster: 'SHIBPUR', month: 'APRIL', score: 63 },
+  { cluster: 'ANDUL', month: 'APRIL', score: 46.5 },
+  { cluster: 'CHINSURAH', month: 'MAY', score: 126.75 },
+  { cluster: 'SALKIA', month: 'MAY', score: 71.5 },
+  { cluster: 'ICHAPUR', month: 'MAY', score: 40.5 },
+  { cluster: 'SERAMPORE', month: 'MAY', score: 48 },
+  { cluster: 'UTTARPARA', month: 'MAY', score: 63.75 },
+  { cluster: 'SHIBPUR', month: 'MAY', score: 44.75 },
+  { cluster: 'ANDUL', month: 'MAY', score: 49.25 },
+  { cluster: 'CHINSURAH', month: 'JUNE', score: 122.75 },
+  { cluster: 'SALKIA', month: 'JUNE', score: 91.25 },
+  { cluster: 'ICHAPUR', month: 'JUNE', score: 54.75 },
+  { cluster: 'SERAMPORE', month: 'JUNE', score: 43.5 },
+  { cluster: 'UTTARPARA', month: 'JUNE', score: 37.5 },
+  { cluster: 'SHIBPUR', month: 'JUNE', score: 75.5 },
+  { cluster: 'ANDUL', month: 'JUNE', score: 73.25 }
+];
+
+const ctx4 = document.getElementById('barChart4').getContext('2d');
+let barChart4;
+let currentMonth = '0';
+
+function filterChartData4() {
+  let filteredData = data;
+  if (currentMonth !== '0') {
+    filteredData = data.filter(item => item.month === currentMonth);
+  }
+
+  const clusters = Array.from(new Set(filteredData.map(item => item.cluster)));
+  const scores = clusters.map(cluster => {
+    const clusterData = filteredData.filter(item => item.cluster === cluster);
+    const averageScore = clusterData.reduce((total, item) => total + item.score, 0) / clusterData.length;
+    return { cluster, score: averageScore };
+  });
+
+  if (barChart4) {
+    barChart4.destroy();
+  }
+
+  barChart4 = new Chart(ctx4, {
+    type: 'bar',
+    data: {
+      labels: clusters,
+      datasets: [
+        {
+          label: 'KPI Score',
+          data: scores.map(item => item.score),
+          backgroundColor: scores.map(item => {
+            if (item.score < 50) {
+  return 'rgba(255, 99, 132, 0.8)'; // Red color for scores below 50
+} else if (item.score > 100) {
+  return 'rgba(80, 200, 120, 0.8)'; // Color for scores above 100
+} else if (item.score > 80) {
+  return 'rgba(124, 252, 124, 0.8)'; // Green color for scores between 80 and 100
+} else {
+  return 'rgba(75, 192, 192, 0.8)'; // Default color for scores between 50 and 80
+}
+
+          })
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: 'Clusters BBC KPI Score 2023-24',
+          font: {
+            size: 20,
+            weight: 'bold',
+            color: '#17a2b8'
+          }
+        },
+        datalabels: {
+          anchor: 'end',
+          align: 'top',
+          font: {
+            size: 14,
+            weight: '',
+            color: '#17a2b8'
+          },
+          formatter: (value, context) => {
+            const label = context.chart.data.labels[context.dataIndex];
+            let stars = '';
+            if (value > 70 && value <= 90) {
+              stars = '★☆☆☆☆'; // One star for scores >70 to <=90
+            } else if (value > 90 && value <= 100) {
+              stars = '★★☆☆☆'; // Two stars for scores >90 to <=100
+            } else if (value > 100 && value <= 110) {
+              stars = '★★★☆☆'; // Three stars for scores >100 to <=110
+            } else if (value > 110 && value <= 130) {
+              stars = '★★★★☆'; // Four stars for scores >110 to <=130
+            } else if (value > 130) {
+              stars = '★★★★★'; // Five stars for scores >130
+            }
+            return 'KPI Score' + ': ' + value.toFixed(2) + ' ' + stars;
+          }
+        }
+      }
+    },
+    plugins: [ChartDataLabels] // Activate the ChartDataLabels plugin
+  });
+}
+
+const monthSelect = document.getElementById('monthSelect');
+monthSelect.addEventListener('change', () => {
+  currentMonth = monthSelect.value;
+  filterChartData4();
+});
+
+filterChartData4();
+
+
+
+
+
+</script>
+
+
+<style>
+.filter-container {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #555;
+  width: 250px; /* Adjusted width to be narrower */
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+/* Optional: Adjust the appearance of the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+}
+
+.container {
+ max-width: 1800px;
+  position: relative;
+}
+
+.charts-container {
+  position: relative;
+}
+
+.filter-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+canvas {
+  width: 100%;
+}
+
+
+</style>
 </body>
 
 </html>
