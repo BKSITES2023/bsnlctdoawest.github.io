@@ -313,11 +313,11 @@
               <div id="chartContainer">
                 <div class="charts-container">
                   <div class="chart-column">
-                    <h2 class="chart-title">Clusters Total CFA Revenue Figure for June 2023 (in Lakh)</h2>
+                    <h2 class="chart-title">Clusters Total CFA Revenue Figure for July 2023 (in Lakh)</h2>
                     <canvas id="doughnutChart"></canvas>
                   </div>
                   <div class="chart-column">
-                    <h2 class="chart-title">Clusters Revenue Figure of FTTH Service for June 2023 (in Lakh)</h2>
+                    <h2 class="chart-title">Clusters Revenue Figure of FTTH Service for July 2023 (in Lakh)</h2>
                     <canvas id="barChart"></canvas>
                   </div>
                 </div>
@@ -335,6 +335,7 @@
                         <option value="APRIL">April</option>
                         <option value="MAY">May</option>
                         <option value="JUNE">June</option>
+                            <option value="JULY">July</option>
                       </select>
                     </div>
                     <canvas id="barChart4"></canvas>
@@ -1324,7 +1325,7 @@ for (var i = 0; i < btns.length; i++) {
 
   });
 
-  const abfFigures = [15.41, 13.16, 12.88, 17.13, 10.68, 10.42, 16.37];
+  const abfFigures = [13.32, 13.83,13.52,20.67,11.09,11.40,16.16];
 const labels = ['ANDUL', 'CHINSURAH', 'ICHAPUR', 'SALKIA', 'SERAMPORE', 'SHIBPUR', 'UTTARPARA'];
 
 const ctx2 = document.getElementById('doughnutChart').getContext('2d');
@@ -1384,7 +1385,7 @@ plugins: [ChartDataLabels] // Activate the ChartDataLabels plugin
   
 </script>
 <script>
-  const ftthabfFigures = [7.77, 5.76, 4.28, 6.75, 4.58, 6.10, 8.17];
+  const ftthabfFigures = [6.80,5.94,4.31,8.37,4.99,6.63,7.88];
   const ftthlabels = ['ANDUL', 'CHINSURAH', 'ICHAPUR', 'SALKIA', 'SERAMPORE', 'SHIBPUR', 'UTTARPARA'];
 
   const ctx3 = document.getElementById('barChart').getContext('2d');
@@ -1616,7 +1617,14 @@ plugins: [ChartDataLabels] // Activate the ChartDataLabels plugin
   { cluster: 'SERAMPORE', month: 'JUNE', score: 43.5 },
   { cluster: 'UTTARPARA', month: 'JUNE', score: 37.5 },
   { cluster: 'SHIBPUR', month: 'JUNE', score: 75.5 },
-  { cluster: 'ANDUL', month: 'JUNE', score: 73.25 }
+  { cluster: 'ANDUL', month: 'JUNE', score: 73.25 },
+  { cluster: 'CHINSURAH', month: 'JULY', score: 117.50 },
+  { cluster: 'SALKIA', month: 'JULY', score: 85.50 },
+  { cluster: 'ICHAPUR', month: 'JULY', score: 68.25 },
+  { cluster: 'SERAMPORE', month: 'JULY', score: 78.50 },
+  { cluster: 'UTTARPARA', month: 'JULY', score: 51.50},
+  { cluster: 'SHIBPUR', month: 'JULY', score: 69.00 },
+  { cluster: 'ANDUL', month: 'JULY', score: 92.50 }
 ];
 
 const ctx4 = document.getElementById('barChart4').getContext('2d');
@@ -1650,15 +1658,14 @@ function filterChartData4() {
           data: scores.map(item => item.score),
           backgroundColor: scores.map(item => {
             if (item.score < 50) {
-  return 'rgba(255, 99, 132, 0.8)'; // Red color for scores below 50
-} else if (item.score > 100) {
-  return 'rgba(80, 200, 120, 0.8)'; // Color for scores above 100
-} else if (item.score > 80) {
-  return 'rgba(124, 252, 124, 0.8)'; // Green color for scores between 80 and 100
-} else {
-  return 'rgba(75, 192, 192, 0.8)'; // Default color for scores between 50 and 80
-}
-
+              return 'rgba(255, 99, 132, 0.8)';
+            } else if (item.score > 100) {
+              return 'rgba(80, 200, 120, 0.8)';
+            } else if (item.score > 80) {
+              return 'rgba(124, 252, 124, 0.8)';
+            } else {
+              return 'rgba(75, 192, 192, 0.8)';
+            }
           })
         }
       ]
@@ -1692,22 +1699,22 @@ function filterChartData4() {
             const label = context.chart.data.labels[context.dataIndex];
             let stars = '';
             if (value > 70 && value <= 90) {
-              stars = '★☆☆☆☆'; // One star for scores >70 to <=90
+              stars = '★☆☆☆☆';
             } else if (value > 90 && value <= 100) {
-              stars = '★★☆☆☆'; // Two stars for scores >90 to <=100
+              stars = '★★☆☆☆';
             } else if (value > 100 && value <= 110) {
-              stars = '★★★☆☆'; // Three stars for scores >100 to <=110
+              stars = '★★★☆☆';
             } else if (value > 110 && value <= 130) {
-              stars = '★★★★☆'; // Four stars for scores >110 to <=130
+              stars = '★★★★☆';
             } else if (value > 130) {
-              stars = '★★★★★'; // Five stars for scores >130
+              stars = '★★★★★';
             }
             return 'KPI Score' + ': ' + value.toFixed(2) + ' ' + stars;
           }
         }
       }
     },
-    plugins: [ChartDataLabels] // Activate the ChartDataLabels plugin
+    plugins: [ChartDataLabels]
   });
 }
 
@@ -1717,8 +1724,15 @@ monthSelect.addEventListener('change', () => {
   filterChartData4();
 });
 
-filterChartData4();
+// Get the last available month from your data
+const lastAvailableMonth = data[data.length - 1].month;
 
+// Set the default selected month in the dropdown
+monthSelect.value = lastAvailableMonth;
+
+// Call the filterChartData4 function to update the chart with the last available month's data
+currentMonth = lastAvailableMonth;
+filterChartData4();
 
 
 
